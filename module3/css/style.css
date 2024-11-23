@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightblue; /* Change as needed */
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+    .section {
+        width: 32%; /* Adjusted for spacing */
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 48%; /* First two in one row */
+    }
+    .section:nth-child(3) {
+        width: 100%; /* Third section takes full width */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .section {
+        width: 100%; /* Each section takes full width */
+    }
+}
+    
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar .navbar-brand {
+    color: white;
+  }
+  
+  .navbar .nav a {
+    color: white;
+  }
+  
+  .navbar .nav a:hover {
+    background-color: #555;
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  #tall-section {
+    height: 1000px;
+    background-color: #eee;
+  }
+  
+  h1 {
+    margin: 20px 0;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
